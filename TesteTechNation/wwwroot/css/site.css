@@ -1,0 +1,59 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+    .col-md-2 {
+        min-height: 10vh;
+    }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.caixa-filtro {
+    display: ruby-text;
+    margin-top: 20px;
+}
+
+/* Estilos da sidebar */
+.sidebar {
+    background-color: #17a2b8;
+    color: white;
+    padding-top: 20px;
+}
+
+.sidebar-header {
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar .navbar-brand {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.sidebar .nav-link {
+    color: white;
+    padding: 15px;
+}
+
+    .sidebar .nav-link:hover,
+    .sidebar .nav-link.active {
+        background-color: #138496;
+    }
+
+    .sidebar .nav-link i {
+        margin-right: 10px;
+    }
+

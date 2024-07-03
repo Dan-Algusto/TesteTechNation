@@ -1,0 +1,56 @@
+﻿@{
+    ViewData["Title"] = "Sobre";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <nav class="col-md-2 sidebar">
+            <div class="sidebar-header">
+                <a href="#" class="navbar-brand">
+                    TechNation
+                </a>
+            </div>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" asp-action="Index">
+                        <i class="bi bi-house-fill"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" asp-action="Sobre">
+                        <i class="bi bi-info-circle-fill"></i>
+                        Sobre
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                <h1 class="h2">Sobre</h1>
+                <div class="user-profile ml-auto">
+                    <img src="~/imagens/admin.png" alt="Sua Foto" class="rounded-circle" width="40" height="40"> <span class="ml-2">Admin</span>
+                </div>
+            </div>
+
+            <div class="container mt-4">
+                <h2>Sistema de Gerenciamento de Notas Fiscais</h2>
+                <p>
+                    Este projeto foi desenvolvido como um teste técnico para a empresa TechNation/UneCont. Ele consiste em um sistema web para gerenciamento de notas fiscais, com um dashboard para visualização de indicadores de desempenho e uma lista de notas fiscais com filtros.
+                </p>
+
+                <h3>Ferramentas Utilizadas</h3>
+                <ul>
+                    <li>ASP.NET Core MVC 6.0</li>
+                    <li>Entity Framework Core 6.0</li>
+                    <li>SQL Server</li>
+                    <li>Bootstrap 5</li>
+                    <li>Chart.js</li>
+                    <li>Razor</li>
+                </ul>
+            </div>
+
+        </main>
+    </div>
+</div>
