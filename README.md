@@ -24,13 +24,15 @@ Instruções de Configuração e Execução:
 
 3. Criar o Banco de Dados e as Tabelas:
    - Execute o script criar_tabelas.sql (incluído no repositório) para criar as tabelas necessárias no banco de dados.
+     
+   OBS Caso queira rodar local: Após criar o banco de dados, você precisará executar as migrations do Entity Framework Core para criar as tabelas necessárias. Para isso, execute o seguinte comando no Package Manager Console do Visual Studio:
+ - Update-Database
+
   
 4. Executar o Projeto com Docker:
-   - Execute o seguinte comando para iniciar os containers do aplicativo e do banco de dados:
+   - Execute o seguinte comando para iniciar os containers do aplicativo e do banco de dados já com a criação da tabela:
      docker-compose up -d
 
-OBS: Após criar o banco de dados, você precisará executar as migrations do Entity Framework Core para criar as tabelas necessárias. Para isso, execute o seguinte comando no Package Manager Console do Visual Studio:
- - Update-Database
 
 
 Dashboard Web:
