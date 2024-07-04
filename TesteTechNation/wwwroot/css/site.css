@@ -1,23 +1,24 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
+
     .col-md-2 {
         min-height: 10vh;
     }
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 .caixa-filtro {
@@ -56,4 +57,3 @@ body {
     .sidebar .nav-link i {
         margin-right: 10px;
     }
-

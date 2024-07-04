@@ -2,7 +2,7 @@
 @using TechNationTeste.Models;
 
 @{
-    ViewData["Title"] = "Dashboard";
+    ViewData["Title"] = "Home";
     int? mesEmissao = ViewData["mesEmissao"] as int?;
     int? mesCobranca = ViewData["mesCobranca"] as int?;
     int? mesPagamento = ViewData["mesPagamento"] as int?;
@@ -37,7 +37,7 @@
 
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
             <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                <h1 class="h2">Dashboard</h1>
+                <h1 class="h2">Notas Fiscais</h1>
                 <div class="user-profile ml-auto">
                     <img src="~/imagens/admin.png" alt="Sua Foto" class="rounded-circle" width="40" height="40"> <span class="ml-2">Admin</span>
                 </div>
@@ -100,7 +100,6 @@
 
             <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                 <h1 class="h2">Dashboard</h1>
-                @* ... (botões e filtros - mantenha como está) *@
             </div>
 
             <div class="row">

@@ -16,7 +16,7 @@ namespace TesteTechNation.Controllers
         public IActionResult Index(int? mesEmissao, int? mesCobranca, int? mesPagamento, string status, string periodo)
         {
             var notasFiscais = _context.notasFiscais.AsQueryable();
-            var dadosGrafico = CalcularDadosGrafico(notasFiscais.ToList(), periodo); // Passar o período para o método CalcularDadosGrafico
+            var dadosGrafico = CalcularDadosGrafico(notasFiscais.ToList(), periodo);
 
             if (mesEmissao.HasValue)
             {
@@ -62,7 +62,7 @@ namespace TesteTechNation.Controllers
             var dadosAgrupados = periodo switch
             {
                 "trimestre" => notasFiscais
-                    .GroupBy(nf => (nf.DataEmissao.Month - 1) / 3 + 1) // Agrupar por trimestre (1, 2, 3, 4)
+                    .GroupBy(nf => (nf.DataEmissao.Month - 1) / 3 + 1)
                     .Select(g => new
                     {
                         Periodo = $"Trimestre {g.Key}",
@@ -89,7 +89,7 @@ namespace TesteTechNation.Controllers
 
             return new GraficoViewModel
             {
-                Periodo = dadosAgrupados.Select(x => x.Periodo).ToList(), // Corrigido para Periodos
+                Periodo = dadosAgrupados.Select(x => x.Periodo).ToList(),
                 Inadimplencia = dadosAgrupados.Select(x => x.Inadimplencia).ToList(),
                 Receita = dadosAgrupados.Select(x => x.Receita).ToList()
             };
