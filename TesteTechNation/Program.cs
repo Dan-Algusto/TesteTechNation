@@ -8,6 +8,7 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<Contexto>
 
+//Conexão BD
 (options => options.UseSqlServer(connectionString: "Data Source=localhost\\SQLEXPRESS01;Initial Catalog=master;Integrated Security=True"));
 
 var app = builder.Build();
