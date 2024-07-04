@@ -33,4 +33,15 @@ OBS: Após criar o banco de dados, você precisará executar as migrations do En
  - Update-Database
 
 
+Dashboard Web:
+
+![image](https://github.com/Dan-Algusto/TesteTechNation/assets/94575507/ff3944fd-6627-4aab-a2d4-37228cfe962f)
+
+Dashboard Mobile:
+
+
+![image](https://github.com/Dan-Algusto/TesteTechNation/assets/94575507/d0ce79e6-4991-44b9-ade5-67c262a74c70)
+
+
+
      
